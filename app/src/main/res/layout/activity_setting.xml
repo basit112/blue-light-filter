@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bluelight.nightfilter.activity.SettingActivity">
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="0dp"
+        android:padding="15dp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/notification_bar"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/tv_on_off"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="@string/status_on"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Switch
+                    android:id="@+id/switchNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_help" />
+
+                <TextView
+                    android:id="@+id/help_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Help"
+                    android:layout_marginStart="13dp"
+                    android:padding="1dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_policy_24" />
+
+                <TextView
+                    android:id="@+id/privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Privacy Policy"
+                    android:layout_marginStart="13dp"
+                    android:padding="1dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_share" />
+
+                <TextView
+                    android:id="@+id/share_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Share App"
+                    android:layout_marginStart="13dp"
+                    android:padding="1dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_star_rate_24" />
+
+                <TextView
+                    android:id="@+id/rate_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Rate Us"
+                    android:layout_marginStart="13dp"
+                    android:padding="1dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_more" />
+
+                <TextView
+                    android:id="@+id/more_apps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="More Apps"
+                    android:layout_marginStart="13dp"
+                    android:padding="1dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+
+
+            <!--                <RelativeLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="@dimen/_10sdp"-->
+            <!--                    android:layout_marginBottom="@dimen/_15sdp">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/img_timepicker"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_centerVertical="true"-->
+            <!--                        android:src="@drawable/ic_timer_black_24dp" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/tv_turn_off_time"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_centerVertical="true"-->
+            <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+            <!--                        android:layout_toRightOf="@id/img_timepicker"-->
+            <!--                        android:text="@string/automatic_time"-->
+            <!--                        android:textColor="@android:color/black" />-->
+
+            <!--                    <LinearLayout-->
+            <!--                        android:id="@+id/ll_turn_on_time"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="match_parent"-->
+            <!--                        android:layout_centerVertical="true"-->
+            <!--                        android:layout_toRightOf="@id/img_timepicker"-->
+            <!--                        android:orientation="horizontal"-->
+            <!--                        android:visibility="gone">-->
+
+            <!--                        <TextView-->
+            <!--                            android:id="@+id/tv_on_timepicker"-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="match_parent"-->
+            <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+            <!--                            android:text="BẬT 10:00 PM"-->
+            <!--                            android:textColor="#319635" />-->
+
+            <!--                        <View-->
+            <!--                            android:layout_width="1dp"-->
+            <!--                            android:layout_height="match_parent"-->
+            <!--                            android:layout_margin="@dimen/_5sdp"-->
+            <!--                            android:background="#000000" />-->
+
+            <!--                        <TextView-->
+            <!--                            android:id="@+id/tv_off_timepicker"-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="match_parent"-->
+            <!--                            android:text="TẮT 7:00 AM"-->
+            <!--                            android:textColor="#DB0C0C" />-->
+            <!--                    </LinearLayout>-->
+
+            <!--                    <Switch-->
+            <!--                        android:id="@+id/switchTime"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_alignParentEnd="true"-->
+            <!--                        android:layout_alignParentRight="true"-->
+            <!--                        android:layout_centerVertical="true" />-->
+            <!--                </RelativeLayout>-->
+            <!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <LinearLayout
+        android:id="@+id/banner_wallpaper_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/setting_adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            app:adSize="BANNER"
+            app:adUnitId="@string/banner_ads_wallpaper" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="354dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

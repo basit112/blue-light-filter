@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.bluelight.nightfilter"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '30.0.3'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.5'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+    // testImplementation 'junit:junit:'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.github.bumptech.glide:glide:4.15.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.github.AppIntro:AppIntro:4.2.3'
+    implementation 'me.tankery.lib:circularSeekBar:1.4.1'
+    implementation 'com.github.fornewid:neumorphism:0.2.1'
+    implementation 'com.google.android.gms:play-services-ads:21.5.0'
+
+
+    //implementation 'com.google.android.gms:play-services-ads:21.5.0'
+
+
+    // implementation 'com.google.firebase:firebase-ads:21.5.0'
+//    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+//    testImplementation 'junit:junit:4.13.2'
+//    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
